@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -625,6 +632,16 @@ img {
 
 .intro {
   min-height: 100vh;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.3)),
+      to(rgba(0, 0, 0, 0.3))
+    ),
+    url(../img/intro-bg-min.jpg) no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/intro-bg-min.jpg) no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../img/intro-bg-min.jpg) no-repeat center;
   background-size: cover;
@@ -725,6 +742,8 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 55px 1fr 55px 1fr;
   grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 55px;
+  -moz-column-gap: 55px;
   column-gap: 55px;
 }
 .benefits__title {
@@ -830,6 +849,8 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-columns: repeat(6, 1fr);
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -908,6 +929,8 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 108px 1fr;
   grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 108px;
+  -moz-column-gap: 108px;
   column-gap: 108px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -987,6 +1010,8 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr;
   grid-template-columns: repeat(6, 1fr);
+  -webkit-column-gap: 57px;
+  -moz-column-gap: 57px;
   column-gap: 57px;
   row-gap: 57px;
 }
@@ -1028,6 +1053,8 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   -ms-grid-column-span: 2;
   grid-column: span 2;
@@ -1163,6 +1190,8 @@ img {
     margin-bottom: 15px;
   }
   .top__cards {
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
     column-gap: 25px;
     row-gap: 55px;
   }

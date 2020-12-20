@@ -1,3 +1,4 @@
+// Fixed header
 (function () {
   const header = document.querySelector(".header");
   window.onscroll = () => {
@@ -29,6 +30,7 @@
     }
   }
 })();
+
 // smooth scroll
 (function () {
   const smoothScroll = function (targetEl, duration) {
